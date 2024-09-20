@@ -30,10 +30,15 @@ navitems.forEach(el=>{
    })
 })
 
+ 
+
 var swiper = new Swiper(".mySwiper", {
    slidesPerView: 1,
    spaceBetween: 10,
-   autoplay:true,
+   autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
    pagination: {
      el: ".swiper-pagination",
      clickable: true,
@@ -53,3 +58,16 @@ var swiper = new Swiper(".mySwiper", {
      },
    },
  });
+
+
+ let callnows = document.querySelectorAll('.callnow');
+ 
+ callnows.forEach(call=>{
+  call.addEventListener('click', function(e){
+  e.preventDefault();
+  let nmb = this.getAttribute('data-number');
+  
+  this.innerHTML = nmb;
+
+ })
+})

@@ -45,7 +45,7 @@ a {
 }
 
 .navbar-brand img {
-  width: 80px;
+  width: 139px;
   object-fit: contain;
 }
 
@@ -127,7 +127,7 @@ header a {
   fill: #fff;
 }
 .counter h3 {
-  font-size: 36px;
+  font-size: 62px;
   font-family: headbolf;
   color: #fff;
   text-align: center;
@@ -163,7 +163,7 @@ header a {
   --bs-gutter-x: 1.2rem;
 }
 .teams .abouts {
-  padding: 100px;
+  padding: 40px 100px;
 }
 .teams .abouts h3 {
   font-size: 16px;
@@ -185,9 +185,10 @@ header a {
 .teams .team {
   background-color: rgba(22, 28, 33, 0.0392156863);
   height: 100%;
-  padding: 30px;
+  padding: 40px;
 }
 .teams .team h6 {
+  text-transform: uppercase;
   font-size: 16px;
   color: #764b97;
   font-family: headbolf;
@@ -198,21 +199,20 @@ header a {
   top: 0;
 }
 .teams .team .t_item img {
-  width: 100%;
-  border-radius: 20px;
+  width: 150px;
+  border-radius: 50%;
   filter: grayscale(0.5);
-  min-height: 200px;
   object-fit: cover;
+  height: 150px;
+  display: block;
+  margin: auto;
+  border: 5px solid #ffffff;
 }
 .teams .team .t_item .info {
   border-radius: 16px;
-  background-color: #fff;
   padding: 12px;
-  transform: translateY(-50%);
   text-align: center;
-  width: 90%;
   margin: auto;
-  box-shadow: 0px 9px 12px rgba(204, 204, 204, 0.3098039216);
 }
 .teams .team .t_item .info h3 {
   font-family: headbolf;
@@ -224,8 +224,8 @@ header a {
 }
 
 .reviews {
-  padding: 100px 0 30px 0;
-  background-color: #16163f;
+  padding: 75px 0 65px 0;
+  background-color: #20132a;
 }
 .reviews .headtexts {
   text-align: center;
@@ -269,6 +269,14 @@ header a {
   text-align: center;
   color: #fff;
 }
+.reviews .carousel-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
 .reviews .carousel-item h3 {
   font-family: "headbolf";
   margin-bottom: 0;
@@ -278,13 +286,17 @@ header a {
   color: #fff;
 }
 
+.carousel-indicators {
+  margin-bottom: -2rem;
+}
+
 .clients {
   padding: 50px 0;
   background-color: rgba(246, 250, 252, 0.9019607843);
 }
 .clients h4 {
   font-family: "headbolf";
-  color: #16163f;
+  color: #764b97;
   font-size: 16px;
   text-align: center;
   margin-bottom: 30px;
@@ -325,7 +337,7 @@ footer .contact address a {
 }
 footer .contact .socials a {
   color: #000;
-  font-size: 19px;
+  font-size: 25px;
   margin-right: 12px;
   display: inline-block;
 }
@@ -439,6 +451,7 @@ footer form .btn {
 
 #dark {
   transform: translateY(2px);
+  color: #16163f;
 }
 
 .lang {
@@ -450,7 +463,7 @@ footer form .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #080609;
+  color: #16163f;
   margin-left: 12px;
 }
 
