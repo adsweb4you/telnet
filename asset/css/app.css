@@ -25,7 +25,7 @@ a {
 }
 
 .navbar {
-  --bs-navbar-padding-y: 0;
+  --bs-navbar-padding-y: 15px;
   transition: all 0.3s ease;
 }
 .navbar .callnow {
@@ -522,10 +522,6 @@ footer form .btn {
 
   .abouts {
     padding: 15px !important;
-  }
-
-  .navbar {
-    --bs-navbar-padding-y: 15px;
   }
 
   .navbar-brand img {
