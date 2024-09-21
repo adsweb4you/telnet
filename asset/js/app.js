@@ -71,3 +71,22 @@ var swiper = new Swiper(".mySwiper", {
 
  })
 })
+
+let scra = document.querySelectorAll('.nav-link');
+
+scra.forEach(alink=>{
+  alink.addEventListener('click', function(e){
+  e.preventDefault();
+  let sel = this.getAttribute('data-scrol');
+ 
+  let offset = document.querySelector(`#${sel}`).offsetTop;
+  let navbar =   document.querySelector('.navbar').offsetHeight;
+   
+  window.scrollTo({
+    top: Number(offset) - Number(navbar),
+    behavior: "smooth",
+  });
+})
+})
+
+
