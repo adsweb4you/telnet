@@ -55,4 +55,21 @@
         padding: 15px !important;
     }
 
+    .navbar {
+        --bs-navbar-padding-y: 15px;
+    }
+
+    .navbar-brand img {
+        width: 89px;
+ 
+    }
+
   }
+
+
+  @media (max-width: 1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
